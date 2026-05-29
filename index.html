@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mahadev Jangam | Java Full Stack Developer</title>
+
+<meta name="description"
+ content="Mahadev Jangam - Java Full Stack Developer Portfolio">
+
+  <!-- Google Font -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS -->
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Typed JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Font Awesome -->
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Particles -->
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#020617;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    #particles-js{
+      position:fixed;
+      width:100%;
+      height:100%;
+      z-index:-1;
+    }
+
+    .glass{
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(12px);
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .gradient-text{
+      background:linear-gradient(to right,#22c55e,#3b82f6);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .card-hover:hover{
+      transform:translateY(-10px);
+      transition:0.4s;
+      box-shadow:0 0 30px rgba(34,197,94,0.4);
+    }
+
+    .skill:hover{
+      transform:scale(1.05);
+      transition:0.3s;
+    }
+
+    .nav-link:hover{
+      color:#22c55e;
+      transition:0.3s;
+    }
+
+    @media(max-width:768px){
+
+      .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+      }
+
+      .hero-buttons{
+        justify-content:center;
+      }
+
+      .hero-image{
+        margin-bottom:30px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<!-- Navbar -->
+
+<header class="fixed w-full top-0 z-50 glass">
+
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+```
+<h1 class="text-2xl font-bold gradient-text">
+  Mahadev
+</h1>
+
+<nav class="hidden md:flex gap-8 text-sm font-medium">
+
+  <a href="#home" class="nav-link">Home</a>
+
+  <a href="#about" class="nav-link">About</a>
+
+  <a href="#skills" class="nav-link">Skills</a>
+
+  <a href="#experience" class="nav-link">Experience</a>
+
+  <a href="#projects" class="nav-link">Projects</a>
+
+  <a href="#profiles" class="nav-link">Profiles</a>
+
+  <a href="#achievements" class="nav-link">Achievements</a>
+
+  <a href="#contact" class="nav-link">Contact</a>
+
+</nav>
+
+<button
+  id="theme-toggle"
+  class="bg-green-500 px-4 py-2 rounded-full text-sm">
+  🌙
+</button>
+```
+
+  </div>
+
+</header>
+<!-- Hero Section -->
+
+<section
+  id="home"
+  class="min-h-screen flex items-center justify-center px-6">
+
+  <div
+    class="max-w-7xl mx-auto hero flex items-center justify-between gap-12">
+
+```
+<!-- Left Content -->
+
+<div data-aos="fade-right">
+
+  <p class="text-green-400 text-lg mb-3">
+    Hello, I'm
+  </p>
+
+  <h1
+    class="text-5xl md:text-7xl font-extrabold leading-tight">
+
+    Mahadev
+
+    <br>
+
+    <span class="gradient-text">
+      Jangam
+    </span>
+
+  </h1>
+
+  <h2
+    class="text-2xl mt-6 font-semibold text-gray-300">
+
+    <span id="typing"></span>
+
+  </h2>
+
+  <p
+    class="mt-6 text-gray-400 max-w-2xl leading-8">
+
+    Aspiring Java Full Stack Developer with strong
+    knowledge of Java, Spring Boot, React.js,
+    PostgreSQL, MySQL and AWS.
+
+    Passionate about building scalable web
+    applications and solving real-world problems
+    through software development.
+
+  </p>
+
+  <!-- Buttons -->
+
+  <div
+    class="hero-buttons flex gap-5 mt-8 flex-wrap">
+
+    <a
+      href="./resume.pdf"
+      download
+      class="bg-green-500 hover:bg-green-600 px-7 py-3 rounded-full font-semibold">
+
+      Download Resume
+
+    </a>
+
+    <a
+      href="#contact"
+      class="border border-green-500 px-7 py-3 rounded-full hover:bg-green-500 transition">
+
+      Hire Me
+
+    </a>
+
+  </div>
+
+  <!-- Social Icons -->
+
+  <div
+    class="flex gap-6 mt-10 text-2xl">
+
+    <a
+      href="https://github.com/mahadev-8221"
+      target="_blank">
+
+      <i
+        class="fab fa-github hover:text-green-400">
+      </i>
+
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/mahadev-jangam-a73758268"
+      target="_blank">
+
+      <i
+        class="fab fa-linkedin hover:text-green-400">
+      </i>
+
+    </a>
+
+    <a
+      href="https://leetcode.com/u/mahadev_jangam/"
+      target="_blank">
+
+      <i
+        class="fas fa-code hover:text-green-400">
+      </i>
+
+    </a>
+
+    <a
+      href="mailto:mahadevjangam8221@gmail.com">
+
+      <i
+        class="fas fa-envelope hover:text-green-400">
+      </i>
+
+    </a>
+
+  </div>
+
+</div>
+
+<!-- Profile Image -->
+
+<div
+  class="hero-image"
+  data-aos="fade-left">
+
+  <img
+    src="./profile.png"
+    alt="Mahadev Jangam"
+
+    class="w-[280px] h-[280px]
+    md:w-[420px] md:h-[420px]
+    object-cover rounded-full
+    border-4 border-purple-500
+    shadow-[0_0_60px_rgba(168,85,247,0.7)]">
+
+</div>
+
+  </div>
+
+</section>
+
+<!-- About Section -->
+
+<section id="about" class="py-24 px-6">
+
+  <div class="max-w-6xl mx-auto">
+
+```
+<h2
+  class="text-4xl font-bold gradient-text mb-12"
+  data-aos="fade-up">
+
+  About Me
+
+</h2>
+
+<div
+  class="glass p-10 rounded-3xl"
+  data-aos="zoom-in">
+
+  <p
+    class="text-gray-300 leading-9 text-lg">
+
+    Aspiring Java Full Stack Developer with
+    strong knowledge of Java, Spring Boot,
+    React.js, SQL and AWS.
+
+    Completed a 4-month internship at
+    JSpiders, gaining hands-on experience in
+    web application development, database
+    management, REST API integration and
+    software development best practices.
+
+    Passionate about building scalable
+    applications and contributing to
+    high-quality software solutions.
+
+  </p>
+
+</div>
+
+  </div>
+
+</section>
+
+<!-- Skills Section -->
+
+<section id="skills" class="py-24 px-6">
+
+  <div class="max-w-7xl mx-auto">
+
+```
+<h2
+  class="text-4xl font-bold text-center gradient-text mb-16"
+  data-aos="fade-up">
+
+  Skills
+
+</h2>
+
+<div
+  class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    Java
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    JavaScript
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    SQL
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    Spring Boot
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    Hibernate
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    JDBC
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    Servlets
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    JSP
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    React.js
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    HTML5
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    CSS3
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    Tailwind CSS
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    MySQL
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    PostgreSQL
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    AWS
+  </div>
+
+  <div class="glass skill p-6 rounded-2xl text-center">
+    Git & GitHub
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- Experience Section -->
+
+<section id="experience" class="py-24 px-6">
+
+  <div class="max-w-6xl mx-auto">
+
+```
+<h2
+  class="text-4xl font-bold gradient-text mb-16 text-center">
+
+  Experience
+
+</h2>
+
+<div
+  class="glass p-10 rounded-3xl card-hover">
+
+  <h3
+    class="text-2xl font-bold text-green-400">
+
+    Java Full Stack Developer Trainee
+
+  </h3>
+
+  <p class="mt-2 text-gray-400">
+
+    JSpiders | 4 Months Internship
+
+  </p>
+
+  <ul
+    class="mt-6 space-y-4 text-gray-300 leading-8">
+
+    <li>
+      ✔ Worked on Java, JDBC, Hibernate,
+      Servlets and Spring Boot.
+    </li>
+
+    <li>
+      ✔ Developed responsive web interfaces
+      using React.js and Tailwind CSS.
+    </li>
+
+    <li>
+      ✔ Designed and managed MySQL and
+      PostgreSQL databases.
+    </li>
+
+    <li>
+      ✔ Worked on REST API integration and
+      frontend-backend communication.
+    </li>
+
+    <li>
+      ✔ Practiced debugging, code optimization
+      and software development best practices.
+    </li>
+
+  </ul>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+
+
+
+<!-- Projects Section -->
+
+<section id="projects" class="py-24 px-6">
+
+  <div class="max-w-7xl mx-auto">
+
+```
+<h2
+  class="text-4xl font-bold gradient-text text-center mb-16">
+
+  Projects
+
+</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+  <!-- Buyer Lead Intake App -->
+
+  <div
+    class="glass p-8 rounded-3xl card-hover">
+
+    <h3
+      class="text-2xl font-bold text-green-400">
+
+      Buyer Lead Intake App
+
+    </h3>
+
+    <p
+      class="mt-5 text-gray-300 leading-8">
+
+      Developed a buyer lead management
+      application with authentication,
+      validation, search/filter,
+      CSV import/export and scalable
+      database design.
+
+    </p>
+
+    <div
+      class="mt-6 flex flex-wrap gap-3">
+
+      <span
+        class="bg-green-500/20 px-4 py-2 rounded-full">
+
+        Next.js
+
+      </span>
+
+      <span
+        class="bg-green-500/20 px-4 py-2 rounded-full">
+
+        PostgreSQL
+
+      </span>
+
+      <span
+        class="bg-green-500/20 px-4 py-2 rounded-full">
+
+        Prisma
+
+      </span>
+
+      <span
+        class="bg-green-500/20 px-4 py-2 rounded-full">
+
+        JavaScript
+
+      </span>
+
+    </div>
+
+  </div>
+
+  <!-- Book My Ticket -->
+
+  <div
+    class="glass p-8 rounded-3xl card-hover">
+
+    <h3
+      class="text-2xl font-bold text-green-400">
+
+      Book My Ticket
+
+    </h3>
+
+    <p
+      class="mt-5 text-gray-300 leading-8">
+
+      Full-stack ticket booking application
+      developed using Java, Spring Boot,
+      React.js and MySQL.
+
+      Implemented user authentication,
+      REST APIs and booking management.
+
+    </p>
+
+    <div
+      class="mt-6 flex flex-wrap gap-3">
+
+      <span
+        class="bg-blue-500/20 px-4 py-2 rounded-full">
+
+        Java
+
+      </span>
+
+      <span
+        class="bg-blue-500/20 px-4 py-2 rounded-full">
+
+        Spring Boot
+
+      </span>
+
+      <span
+        class="bg-blue-500/20 px-4 py-2 rounded-full">
+
+        React.js
+
+      </span>
+
+      <span
+        class="bg-blue-500/20 px-4 py-2 rounded-full">
+
+        MySQL
+
+      </span>
+
+    </div>
+
+  </div>
+
+  <!-- Brick Breaker Game -->
+
+  <div
+    class="glass p-8 rounded-3xl card-hover">
+
+    <h3
+      class="text-2xl font-bold text-green-400">
+
+      Brick Breaker Game
+
+    </h3>
+
+    <p
+      class="mt-5 text-gray-300 leading-8">
+
+      Developed a 2D interactive
+      Brick Breaker Game using Java Swing.
+
+      Implemented collision detection,
+      score management and smooth
+      gameplay mechanics.
+
+    </p>
+
+    <div
+      class="mt-6 flex flex-wrap gap-3">
+
+      <span
+        class="bg-yellow-500/20 px-4 py-2 rounded-full">
+
+        Java
+
+      </span>
+
+      <span
+        class="bg-yellow-500/20 px-4 py-2 rounded-full">
+
+        Swing
+
+      </span>
+
+      <span
+        class="bg-yellow-500/20 px-4 py-2 rounded-full">
+
+        AWT
+
+      </span>
+
+      <span
+        class="bg-yellow-500/20 px-4 py-2 rounded-full">
+
+        OOP
+
+      </span>
+
+    </div>
+
+  </div>
+
+  <!-- ATM Machine Simulation -->
+
+  <div
+    class="glass p-8 rounded-3xl card-hover">
+
+    <h3
+      class="text-2xl font-bold text-green-400">
+
+      ATM Machine Simulation
+
+    </h3>
+
+    <p
+      class="mt-5 text-gray-300 leading-8">
+
+      Console-based ATM system supporting
+      deposit, withdrawal, balance inquiry
+      and transaction history.
+
+      Implemented using Hibernate ORM
+      and MySQL database.
+
+    </p>
+
+    <div
+      class="mt-6 flex flex-wrap gap-3">
+
+      <span
+        class="bg-purple-500/20 px-4 py-2 rounded-full">
+
+        Java
+
+      </span>
+
+      <span
+        class="bg-purple-500/20 px-4 py-2 rounded-full">
+
+        Hibernate
+
+      </span>
+
+      <span
+        class="bg-purple-500/20 px-4 py-2 rounded-full">
+
+        MySQL
+
+      </span>
+
+      <span
+        class="bg-purple-500/20 px-4 py-2 rounded-full">
+
+        OOP
+
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+
+</section>
+
+
+<!-- Coding Profiles -->
+
+<section id="profiles" class="py-24 px-6">
+
+  <div class="max-w-6xl mx-auto">
+
+```
+<h2
+  class="text-4xl font-bold gradient-text text-center mb-16">
+
+  Coding Profiles
+
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+  <!-- GitHub -->
+
+  <a
+    href="https://github.com/mahadev-8221"
+    target="_blank"
+    class="glass p-8 rounded-3xl text-center card-hover">
+
+    <i class="fab fa-github text-5xl"></i>
+
+    <h3 class="mt-4 text-xl font-bold">
+      GitHub
+    </h3>
+
+  </a>
+
+  <!-- LeetCode -->
+
+  <a
+    href="https://leetcode.com/u/mahadev_jangam/"
+    target="_blank"
+    class="glass p-8 rounded-3xl text-center card-hover">
+
+    <i class="fas fa-code text-5xl"></i>
+
+    <h3 class="mt-4 text-xl font-bold">
+      LeetCode
+    </h3>
+
+  </a>
+
+  <!-- LinkedIn -->
+
+  <a
+    href="https://www.linkedin.com/in/mahadev-jangam-a73758268"
+    target="_blank"
+    class="glass p-8 rounded-3xl text-center card-hover">
+
+    <i class="fab fa-linkedin text-5xl"></i>
+
+    <h3 class="mt-4 text-xl font-bold">
+      LinkedIn
+    </h3>
+
+  </a>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- Achievements -->
+
+<section id="achievements" class="py-24 px-6">
+
+  <div class="max-w-6xl mx-auto">
+
+```
+<h2
+  class="text-4xl font-bold gradient-text text-center mb-16">
+
+  Achievements & Certifications
+
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+  <div
+    class="glass p-8 rounded-3xl text-center card-hover">
+
+    <i
+      class="fas fa-trophy text-5xl text-yellow-400">
+    </i>
+
+    <h3
+      class="mt-6 text-xl font-bold">
+
+      Robotics Winner
+
+    </h3>
+
+    <p
+      class="mt-4 text-gray-400">
+
+      3-Time National Level Robotics
+      Competition Winner
+
+    </p>
+
+  </div>
+
+  <div
+    class="glass p-8 rounded-3xl text-center card-hover">
+
+    <i
+      class="fas fa-certificate text-5xl text-green-400">
+    </i>
+
+    <h3
+      class="mt-6 text-xl font-bold">
+
+      Certifications
+
+    </h3>
+
+    <p
+      class="mt-4 text-gray-400">
+
+      Java Full Stack Development
+      Certification & AWS Training
+
+    </p>
+
+  </div>
+
+  <div
+    class="glass p-8 rounded-3xl text-center card-hover">
+
+    <i
+      class="fas fa-lightbulb text-5xl text-blue-400">
+    </i>
+
+    <h3
+      class="mt-6 text-xl font-bold">
+
+      Buildathon
+
+    </h3>
+
+    <p
+      class="mt-4 text-gray-400">
+
+      Participated in Buildathon
+      and Innovation Events
+
+    </p>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="py-24 px-6">
+
+  <div class="max-w-5xl mx-auto">
+
+```
+<h2
+  class="text-4xl font-bold gradient-text text-center mb-16">
+
+  Contact Me
+
+</h2>
+
+<form
+  id="contactForm"
+  action="https://formspree.io/f/mjkevqao"
+  method="POST"
+  class="glass p-10 rounded-3xl space-y-6">
+
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    class="w-full p-4 rounded-xl bg-gray-900 border border-gray-700">
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+    class="w-full p-4 rounded-xl bg-gray-900 border border-gray-700">
+
+  <textarea
+    name="message"
+    rows="6"
+    placeholder="Your Message"
+    required
+    class="w-full p-4 rounded-xl bg-gray-900 border border-gray-700"></textarea>
+
+  <button
+    type="submit"
+    class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full font-semibold w-full">
+
+    Send Message
+
+  </button>
+
+  <p
+    id="result"
+    class="text-center">
+  </p>
+
+</form>
+```
+
+  </div>
+
+</section>
+<!-- Footer -->
+
+<footer class="py-8 text-center text-gray-400 border-t border-gray-800">
+  <p>© 2026 Mahadev Jangam | Java Full Stack Developer</p>
+</footer>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Contact Form -->
+<script>
+const form = document.getElementById("contactForm");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (response.ok) {
+      result.innerHTML =
+      "<span style='color:#22c55e'>✅ Message Sent Successfully!</span>";
+
+      form.reset();
+
+    } else {
+
+      result.innerHTML =
+      "<span style='color:red'>❌ Failed To Send Message</span>";
+
+    }
+
+  } catch {
+
+    result.innerHTML =
+    "<span style='color:orange'>⚠️ Network Error</span>";
+
+  }
+});
+</script>
+
+<!-- AOS -->
+<script>
+AOS.init({
+  duration: 1000,
+  once: true
+});
+</script>
+
+<!-- Typed JS -->
+<script>
+new Typed('#typing', {
+  strings: [
+    'Java Full Stack Developer',
+    'Spring Boot Developer',
+    'React.js Developer',
+    'AWS Learner'
+  ],
+  typeSpeed: 60,
+  backSpeed: 40,
+  loop: true
+});
+</script>
+
+<!-- Theme Toggle -->
+<script>
+const themeBtn = document.getElementById('theme-toggle');
+
+themeBtn.addEventListener('click', () => {
+
+  if(document.body.style.background === 'white') {
+
+    document.body.style.background = '#020617';
+    document.body.style.color = 'white';
+    themeBtn.innerHTML = '🌙';
+
+  } else {
+
+    document.body.style.background = 'white';
+    document.body.style.color = '#111827';
+    themeBtn.innerHTML = '☀️';
+
+  }
+
+});
+</script>
+
+<!-- Particles -->
+<script>
+tsParticles.load('particles-js', {
+  particles: {
+    number: {
+      value: 60
+    },
+    color: {
+      value: '#22c55e'
+    },
+    links: {
+      enable: true,
+      color: '#3b82f6'
+    },
+    move: {
+      enable: true,
+      speed: 1
+    }
+  }
+});
+</script>
+
+</body>
+</html>
